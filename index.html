@@ -336,11 +336,6 @@ window.addEventListener("load", () => {
   const randomIndex = Math.floor(Math.random() * backgrounds.length);
   player.style.background = `url('${backgrounds[randomIndex]}') center/cover no-repeat`;
 });
-  
-// --- MP3 Player JS ---
-const playlist = [
-   "thebegining.mp3"]
-  
 
 const words = ['GAP','SELCO CAR PARK','SVETLANA','THE VICTORIAN CHILDREN','GLOP','GLAP',
   'SURREY CANAL ROAD','ROLL OVER','DEAD END','LOVE','PEACE','YOU CAN DO THIS',
@@ -388,7 +383,7 @@ function spawnFloatingItem(){
 setInterval(spawnFloatingItem, 2500);
 
 // PLAYER LOGIC (unchanged)
-const playlist = [];
+const playlist = ["thebeginning.mp3"];
 let order = [...playlist.keys()];
 let current = 0;
 let shuffle = false;
@@ -484,6 +479,11 @@ audio.addEventListener("ended",nextTrack);
 </script>
 </body>
 </html>
+
+
+
+
+
 
 
 
